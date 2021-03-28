@@ -1,0 +1,21 @@
+.header {
+  font-family: Roboto;
+  font-style: normal;
+  color: #FCFBF7;
+  font-weight: bold;
+  font-size: 30px;
+  line-height: 32px;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+}
+
+.theme_dark {
+  background-color: #261C00;
+}

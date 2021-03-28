@@ -1,0 +1,85 @@
+@import './colors.scss';
+
+@mixin common-fonts {
+  font-family: Roboto;
+  font-style: normal;
+  color: $white;
+}
+
+@mixin headline-white {
+  @include common-fonts;
+  font-weight: bold;
+  font-size: 30px;
+  line-height: 32px;
+}
+
+@mixin headline-black {
+  @include headline-white;
+  color: $black;
+}
+
+@mixin subhead-white {
+  @include common-fonts;
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 22px;
+}
+
+@mixin subhead-gray {
+  @include subhead-white;
+  color: $gray;
+}
+
+@mixin subhead-black {
+  @include subhead-white;
+  color: $black;
+}
+
+@mixin subhead-light-gray {
+  @include subhead-white;
+  color: $light-gray;
+}
+
+@mixin body-white {
+  @include common-fonts;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 18px;
+}
+
+@mixin body-gray {
+  @include body-white;
+  color: $gray;
+}
+
+@mixin body-black {
+  @include body-white;
+  color: $black;
+}
+
+@mixin body-light-gray {
+  @include body-white;
+  color: $light-gray;
+}
+
+@mixin caption-white {
+  @include common-fonts;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 16px;
+}
+
+@mixin caption-gray {
+  @include caption-white;
+  color: $gray;
+}
+
+@mixin caption-black {
+  @include caption-white;
+  color: $blcik;
+}
+
+@mixin caption-light-gray {
+  @include caption-white;
+  color: $light-gray;
+}

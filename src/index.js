@@ -1,3 +1,6 @@
+import { leadersHtml } from './leaders/leaders';
+import './styles.scss';
+
 console.log('wata fuck222888?!');
 
 const params = location.search
@@ -17,5 +20,5 @@ console.log(params);
 
 window.renderTemplate = function (alias, data) {
   // ...
-  return '<div>oppana</div>';
+  return leadersHtml;
 };
