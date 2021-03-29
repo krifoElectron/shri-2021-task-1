@@ -1,24 +1,48 @@
-import { getLeadersHtml } from './leaders/leaders';
+import allData from './data/data.json';
+import { createElementWithCn } from './core';
+import './styles/page.scss';
 import './styles.scss';
-
-console.log('wata fuck222888?!');
 
 const params = location.search
   .substr(1)
-  .split('&') // разбиваем на параметры
+  .split('&')
   .reduce(function (res, a) {
-    // разбираем пары ключ-значение
     const paramsArray = a.split('=');
-
-    // нужно декодировать и ключ и значение, значения может не быть
     res[decodeURIComponent(paramsArray[0])] =
       paramsArray.length === 1 ? null : decodeURIComponent(paramsArray[1]);
     return res;
   }, {});
 
-console.log(params);
+const { slide = 1 } = params;
+
+const alias = allData[slide - 1].alias;
+const data = allData[slide - 1].data;
 
 window.renderTemplate = function (alias, data) {
-  // ...
-  return getLeadersHtml();
+  const currentData = data[slide - 1];
+
+  const page = createElementWithCn({
+    tagName: 'div',
+    className: 'page',
+  });
+
+  const title = createElementWithCn({
+    tagName: 'div',
+    textContent: data.title,
+    className: 'page__title',
+  });
+
+  const subtitle = createElementWithCn({
+    tagName: 'div',
+    textContent: data.subtitle,
+    className: 'page__subtitle',
+  });
+
+  page.appendChild(title);
+  page.appendChild(subtitle);
+
+  return page.outerHTML;
 };
+
+const body = document.querySelector('body');
+body.innerHTML = window.renderTemplate(alias, data);

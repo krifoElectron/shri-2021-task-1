@@ -1,9 +1,14 @@
 @import '../styles/base/base.scss';
 
-.leaders-page {
+.page {
   padding: 20px 24px 0 24px;
 
-  &__header {
+  &__title {
     @include headline-white;
+    margin-bottom: 8px;
+  }
+
+  &__subtitle {
+    @include body-grey;
   }
 }

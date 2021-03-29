@@ -1,2 +1,2 @@
-.leaders-page{padding:20px 24px 0 24px}.leaders-page__header{font-family:Roboto;font-style:normal;color:#fcfbf7;font-weight:bold;font-size:30px;line-height:32px}
-*{margin:0;padding:0;box-sizing:border-box}html,body{height:100%}.theme_dark{background-color:#261c00}
+.page{padding:20px 24px 0 24px}.page__title{font-family:Roboto;font-style:normal;color:#fcfbf7;font-weight:bold;font-size:30px;line-height:32px;margin-bottom:8px}.page__subtitle{font-family:Roboto;font-style:normal;color:#fcfbf7;font-weight:500;font-size:16px;line-height:18px;color:#918f8a}
+@font-face{font-family:"Roboto";src:url(assets/Roboto-Medium.ttf)}*{margin:0;padding:0;box-sizing:border-box}html,body{height:100%}.theme_dark{background-color:#261c00}

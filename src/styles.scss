@@ -1,5 +1,10 @@
 @import './styles/base/base.scss';
 
+@font-face {
+  font-family: 'Roboto';
+  src: url("assets/fonts/Roboto-Medium.ttf");
+}
+
 * {
   margin: 0;
   padding: 0;

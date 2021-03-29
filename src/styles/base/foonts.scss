@@ -25,9 +25,9 @@
   line-height: 22px;
 }
 
-@mixin subhead-gray {
+@mixin subhead-grey {
   @include subhead-white;
-  color: $gray;
+  color: $grey;
 }
 
 @mixin subhead-black {
@@ -35,9 +35,9 @@
   color: $black;
 }
 
-@mixin subhead-light-gray {
+@mixin subhead-light-grey {
   @include subhead-white;
-  color: $light-gray;
+  color: $light-grey;
 }
 
 @mixin body-white {
@@ -47,9 +47,9 @@
   line-height: 18px;
 }
 
-@mixin body-gray {
+@mixin body-grey {
   @include body-white;
-  color: $gray;
+  color: $grey;
 }
 
 @mixin body-black {
@@ -57,9 +57,9 @@
   color: $black;
 }
 
-@mixin body-light-gray {
+@mixin body-light-grey {
   @include body-white;
-  color: $light-gray;
+  color: $light-grey;
 }
 
 @mixin caption-white {
@@ -69,9 +69,9 @@
   line-height: 16px;
 }
 
-@mixin caption-gray {
+@mixin caption-grey {
   @include caption-white;
-  color: $gray;
+  color: $grey;
 }
 
 @mixin caption-black {
@@ -79,7 +79,7 @@
   color: $blcik;
 }
 
-@mixin caption-light-gray {
+@mixin caption-light-grey {
   @include caption-white;
-  color: $light-gray;
+  color: $light-grey;
 }
