@@ -1,8 +1,5 @@
 const path = require('path');
-// const HtmlWebpackPlugin = require('html-webpack-plugin');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
-// import path from 'path';
-// import HtmlWebpackPlugin from 'html-webpack-plugin';
 
 module.exports = {
   plugins: [new MiniCssExtractPlugin({ filename: 'stories.css' })],
@@ -12,12 +9,12 @@ module.exports = {
     rules: [
       { test: /\.scss$/, use: [MiniCssExtractPlugin.loader, 'css-loader', 'sass-loader'] },
       {
-        test: /\.js$/, //Regular expression
+        test: /\.js$/,
         exclude: /(node_modules|bower_components)/,
         use: {
           loader: 'babel-loader',
           options: {
-            presets: ['@babel/preset-env'], //Preset used for env setup
+            presets: ['@babel/preset-env'],
           },
         },
       },
