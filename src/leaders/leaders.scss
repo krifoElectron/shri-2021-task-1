@@ -1,5 +1,9 @@
 @import '../styles/base/base.scss';
 
-.header {
-  @include headline-white;
+.leaders-page {
+  padding: 20px 24px 0 24px;
+
+  &__header {
+    @include headline-white;
+  }
 }

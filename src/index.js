@@ -1,4 +1,4 @@
-import { leadersHtml } from './leaders/leaders';
+import { getLeadersHtml } from './leaders/leaders';
 import './styles.scss';
 
 console.log('wata fuck222888?!');
@@ -20,5 +20,5 @@ console.log(params);
 
 window.renderTemplate = function (alias, data) {
   // ...
-  return leadersHtml;
+  return getLeadersHtml();
 };

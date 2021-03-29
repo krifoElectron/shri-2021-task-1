@@ -1,21 +1,2 @@
-.header {
-  font-family: Roboto;
-  font-style: normal;
-  color: #FCFBF7;
-  font-weight: bold;
-  font-size: 30px;
-  line-height: 32px;
-}
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-html, body {
-  height: 100%;
-}
-
-.theme_dark {
-  background-color: #261C00;
-}
+.leaders-page{padding:20px 24px 0 24px}.leaders-page__header{font-family:Roboto;font-style:normal;color:#fcfbf7;font-weight:bold;font-size:30px;line-height:32px}
+*{margin:0;padding:0;box-sizing:border-box}html,body{height:100%}.theme_dark{background-color:#261c00}
