@@ -34,7 +34,9 @@ function createPlaceOnThePodium(placeNumber, user) {
 
   const placePersonBlock = createElementWithCn({
     tagName: 'div',
-    className: 'leaders-page__person-block',
+    className: `leaders-page__person-block${
+      placeNumber === 1 ? ' leaders-page__person-block_first' : ''
+    }`,
   });
 
   const imgElement = createElementWithCn({
