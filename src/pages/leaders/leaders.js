@@ -1,4 +1,5 @@
 import { createElementWithCn } from '../../core';
+import { bemCn } from '../../utils/bem';
 import './leaders.scss';
 
 const MAP_NUMBER_TO_STRING = {
@@ -7,10 +8,12 @@ const MAP_NUMBER_TO_STRING = {
   3: 'third',
 };
 
+const cn = bemCn('leaders-page');
+
 export const getLeadersElement = (users) => {
   const leadersElement = createElementWithCn({
     tagName: 'div',
-    className: `leaders-page`,
+    className: cn(),
   });
 
   const thirdPlaceOnThePodium = createPlaceOnThePodium(3, users[2]);
